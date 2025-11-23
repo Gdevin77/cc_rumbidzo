@@ -1,0 +1,163 @@
+/* --- HERO --- */
+.contact-hero {
+  position: relative;
+  height: 45vh;
+  background: url("images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(3px);
+}
+
+.hero-text {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* --- CONTACT LAYOUT --- */
+.modern-contact {
+  margin-top: 40px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 30px;
+}
+
+.contact-card, .map-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.08);
+  animation: fadeIn 1s ease both;
+}
+
+.contact-card h2,
+.map-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+}
+
+/* FLOATING LABEL INPUTS */
+.input-group {
+  position: relative;
+  margin: 18px 0;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  color: #777;
+  background: white;
+  padding: 0 6px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #2185d0;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 0.8rem;
+  color: #2185d0;
+}
+
+/* MAP */
+.map-box iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* BUTTON */
+.cta {
+  margin-top: 10px;
+  padding: 14px;
+  width: 100%;
+  background: #2185d0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.25s;
+}
+
+.cta:hover {
+  background: #1769aa;
+}
+
+/* STATUS MESSAGE */
+.status {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* FOOTER */
+.modern-foot {
+  margin-top: 60px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 6px;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

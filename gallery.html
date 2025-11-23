@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Gallery — Chinhoyi Caves</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="gallery.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="logo" href="index.html">Visit Chinhoyi</div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </div>
+  <ul class="nav-links" id="nav-links">
+     <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html" class="book">Contact / Book</a></li> 
+  </ul>
+</nav>
+
+
+<main class="content gallery-page">
+
+<!-- HERO SECTION -->
+<section class="about-hero modern-hero">
+  <img src="images/1.png" class="hero-img" alt="">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-text fade-up">
+    <h1>Gallery</h1>
+    <p>Discover the beauty of Chinhoyi Caves through stunning visuals</p>
+  </div>
+</section>
+
+
+<!-- GALLERY -->
+<div class="wrap">
+<div class="gallery-grid">
+
+  <figure>
+    <img src="images/7.jpg" alt="">
+    <figcaption>Beautiful view of the main cave entrance</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/2.jpg" alt="">
+    <figcaption>The crystal-blue Sleeping Pool waters</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/3.jpg" alt="">
+    <figcaption>Sunlight shining into the deep cave</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/4.jpg" alt="">
+    <figcaption>Divers exploring the underwater passages</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/5.jpg" alt="">
+    <figcaption>Rock formations inside the limestone chambers</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/6.jpg" alt="">
+    <figcaption>The serene surrounding forest area</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/1.png" alt="">
+    <figcaption>Map of Chinhoyi Caves</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/hero.jpg" alt="">
+    <figcaption>Main attraction — the famous Blue Pool</figcaption>
+  </figure>
+
+</div>
+</div>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-img" src="">
+</div>
+
+
+<footer class="sitefoot small modern-foot">
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/1DAeHa3BhK/?mibextid=wwXIfr" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/rumbidzo05?igsh=ajl3Z2ZkazAxOGVs&utm_source=qr" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="https://wa.me/+263786705138" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/in/rumbidzo-mwanachi-211a02286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+  © 2025 Chinhoyi Caves
+</footer>
+
+
+<script>
+// LIGHTBOX FUNCTIONALITY
+const images = document.querySelectorAll('.gallery-grid img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.classList.add('show');
+  });
+});
+
+lightbox.addEventListener('click', () => {
+  lightbox.classList.remove('show');
+});
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links")
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Contact — Chinhoyi Caves</title>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo" href="index.html">Visit Chinhoyi</div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html" class="book">Contact / Book</a></li> 
+  </ul>
+</nav>
+<!-- MODERN HERO -->
+<section class="contact-hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <h1>Contact & Bookings</h1>
+    <p>Get in touch with us or book a guided tour at the Chinhoyi Caves</p>
+  </div>
+</section>
+
+<main class="wrap content modern-contact">
+
+<!-- CONTACT CARD -->
+<div class="contact-container">
+
+  <div class="contact-card fade-in">
+    <h2>Send a Message</h2>
+    <p>Fill in the form below and our team will respond shortly.</p>
+
+    <form onsubmit="return submitContact(event)" class="contact-form">
+
+      <div class="input-group">
+        <input type="text" id="name" required>
+        <label>Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" rows="5" required></textarea>
+        <label>Message</label>
+      </div>
+
+      <button type="submit" class="cta">Send Request</button>
+      <p id="status" class="status"></p>
+    </form>
+  </div>
+
+  <!-- MAP SECTION -->
+  <div class="map-card fade-in">
+    <h2>Location</h2>
+    <p>Find us at the historic Chinhoyi Caves National Park.</p>
+    <div class="map-box">
+      <iframe src="https://www.google.com/maps?q=Chinhoyi%20Caves&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="sitefoot small modern-foot">
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/1DAeHa3BhK/?mibextid=wwXIfr" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/rumbidzo05?igsh=ajl3Z2ZkazAxOGVs&utm_source=qr" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="https://wa.me/+263786705138" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/in/rumbidzo-mwanachi-211a02286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+  <p>© 2025 Chinhoyi Caves</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
